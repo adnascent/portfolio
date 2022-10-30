@@ -6,10 +6,10 @@
       <h1>George Mahoney-Potter</h1>
       <ul>
         <li>Web developer</li>
-        <li>Collaborator</li>
+        <!--<li>Collaborator</li>
         <li>Designer</li>
         <li>Idea generator</li>
-        <li>Leader</li>
+        <li>Leader</li>-->
       </ul>
       </div>
       <!-- @formatter off -->
