@@ -1,0 +1,851 @@
+<template>
+  <main>
+
+    <section id="intro">
+      <div class="intro__meta">
+      <h1>George Mahoney-Potter</h1>
+      <ul>
+        <li>Web developer</li>
+        <li>Collaborator</li>
+        <li>Designer</li>
+        <li>Idea generator</li>
+        <li>Leader</li>
+      </ul>
+      </div>
+      <!-- @formatter off -->
+      <div class="intro__doodle">
+      <css-doodle class="intro__doodle__inner">
+        <!--suppress CssInvalidAtRule, CssInvalidPseudoSelector -->
+        <style>
+          :doodle {
+            @grid: 25x1 / 18vmin;
+          }
+          :container {
+            perspective: 30vmin;
+          }
+
+          @place-cell: center;
+          @size: 100%;
+
+          transform: rotate(calc(@i * 5deg));
+          border-radius: 50%;
+          border: 1px solid hsla(
+          calc(10 + 4 * @i), 70%, 68%, @r.8
+          );
+
+          transform-style: preserve-3d;
+          will-change: transform, opacity;
+          animation: scale-up 10s ease-in infinite;
+          animation-delay: calc(-7s / @size() * @i());
+
+          @keyframes scale-up {
+            0%, 100% {
+              transform: translate3d(0, 0, 0) rotate(0);
+              opacity: 0;
+            }
+            10% {
+              opacity: 1;
+            }
+            95% {
+              transform:
+                translate3d(0, 0, 45vmin)
+                rotateX(calc(@p(-1, 1) * @r(30deg, 330deg)))
+            rotateY(calc(@p(-1, 1) * @r(30deg, 330deg)))
+            rotateZ(calc(@p(-1, 1) * @r(30deg, 330deg)))
+            }
+          }
+        </style>
+      </css-doodle>
+      </div>
+      <!-- @formatter on -->
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about__inner">
+        <div class="about__image">
+          <img src="https://via.placeholder.com/800x800" alt="About me">
+        </div>
+        <div class="about__content">
+          <h3>Hello there!</h3>
+          <p>
+            As a computer enthusiast from a young age, a computer graphics major,
+            business minor, and web developer for the past 12 years, I bring a healthy mixture of technological prowess,
+            creativity, business acumen, and leadership skills.
+          </p>
+          <p>
+            Please take a look below at some of my professional accomplishments over the years.
+            If you find that I am a great fit for your working needs, please contact me and I would love to respond.
+          </p>
+          <a href="#" class="button">Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience__inner">
+        <div class="experience__container">
+          <div class="experience__image">
+            <div>
+            <img src="https://via.placeholder.com/800x800" alt="OFS Brands examples">
+            </div>
+          </div>
+          <div class="experience__content">
+            <h3>OFS Brands</h3>
+
+            <h5>Employed from July 2016</h5>
+            <p>Work includes: creating and managing multiple brand websites, an e-commerce store, internal website portals,
+            and varies B2B toolsets, along with ideation planning, technology support, and reporting.</p>
+
+            <h4>Website Development</h4>
+            <p>Written and maintained every brand facing website, co-wrote company internal tools covering
+            literature sample ordering, learning platforms, crm systems, and a whole lot more.</p>
+
+            <h4>Ideation Contributions</h4>
+            <p>Brought to life various internal tools by creating UX/UI templates, submitting feature ideas, and researching solutions.
+            As a recent example, I have helped plan, research, and developed an online catalog that allowed OFS to convert static pricing
+            PDFs into a web-tool that allows users to customize 3d models with over 5,000 part numbers with millions of combinations,
+            while saving hundreds of thousands of dollars spent on PDF creation.</p>
+
+            <h4>Programming Support</h4>
+            <p>Have helped several user groups involving industry dealers, sales representatives, and end users with support cases through a
+            ticket system and delivering website changes from inter departmental requests.</p>
+          </div>
+        </div>
+        <div class="experience__container">
+          <div class="experience__image">
+            <img src="https://via.placeholder.com/800x800" alt="CLI Examples">
+          </div>
+          <div class="experience__content">
+            <h3>CLI</h3>
+
+            <h5>Previously Employed January 2013 - July 2016</h5>
+            <p>Work included: creating and managing multiple e-commerce stores and websites, web consulting, marketing emails, ad
+            creation, programming support, software development, statistical reporting.</p>
+
+            <h4>Website Development</h4>
+            <p>I've successfully helped launch several national branded ecommerce stores. While continually supporting them with site
+            updates and customer usability through A/B split tests.</p>
+
+            <h4>Email Marketing</h4>
+            <p>Email marketing is a constant supplier of business at CLI International. I developed emails on a daily bases that reach
+            hundreds of thousands of subscribers.</p>
+
+            <h4>Programming Support</h4>
+            <p>When a front end application is needed, I lent my hand to create frontend programs. I've also helped
+            maintain databases and contribute C# code on asp.net projects.</p>
+          </div>
+        </div>
+        <div class="experience__container">
+          <div class="experience__image">
+            <img src="https://via.placeholder.com/800x800" alt="RideTech examples">
+          </div>
+          <div class="experience__content">
+            <h3>RideTech</h3>
+
+            <h5>Previously Employed January 2010 - January 2013</h5>
+            <p>Work involved: creating and editing an eCommerce store, designing email marketing campaigns, using social media,
+            developing content management systems, and on occasion, laying out print media.</p>
+
+            <h4>Ecommerce Development</h4>
+            <p>Every year that I worked at Ridetech, website sales increased by 30%. At the point of departure, online web sales
+            compared to all other sales was at the highest point in company history.</p>
+
+            <h4>Email and Social Media Marketing</h4>
+            <p>Keeping constant contact with customers was a big priority at Ridetech. We leveraged email and social media marketing
+            to include race event results, customer photographs, and installation tips. With targeted engaging content, the facebook
+            page grew from a couple thousand to tens of thousands.</p>
+
+            <h4>Print Displays</h4>
+            <p>Fliers, Vehicle Vinyl Wraps, and Booth Displays are all things I've helped create for Ridetech. For the catalog I worked
+            cooperatively with another designer to supply product photography and technical graphics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills__groups">
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Languages"> Languages</h3>
+          <div class="skills__set">
+            <div>
+              PHP
+            </div>
+            <div>
+              Javascript
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Frameworks"> Frameworks</h3>
+          <div class="skills__set">
+            <div>Drupal</div>
+            <div>Vue</div>
+            <div>Nuxt</div>
+            <div>Symphony</div>
+            <div>Wordpress</div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Software"> Software</h3>
+          <div class="skills__set">
+            <div>
+              Jetbrains Suite
+              <small>Phpstorm, Webstorm</small>
+            </div>
+            <div>
+              Adobe creative suite
+              <small>Photoshop, Illustrator, InDesign</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Cloud software">Cloud software</h3>
+          <div class="skills__set">
+            <div>Google documents</div>
+            <div>Shopify</div>
+            <div>Mailchimp</div>
+            <div>Jira</div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Cloud platforms"> Cloud platforms</h3>
+          <div class="skills__set">
+            <div>
+              AWS
+              <small>S3, Lambda, Cloudfront, CloudSearch</small>
+            </div>
+            <div>
+              Google Cloud
+              <small>Google Maps API, Compute Engine</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Version control"> Version control</h3>
+          <div class="skills__set">
+            <div>
+              Git
+              <small>Gitlab, Github</small></div>
+            <div>
+              SVN
+              <small>TortoiseSvn</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Development principles"> Development principles</h3>
+          <div class="skills__set">
+            <div>Code development</div>
+            <div>Containerization</div>
+            <div>Deployment pipelines</div>
+            <div>Code testing</div>
+            <div>Documentation and training</div>
+            <div>Coding standards</div>
+            <div>SEO and accessibility testing</div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><img src="https://via.placeholder.com/400x400" alt="Operating systems"> OS</h3>
+          <div class="skills__set">
+            <div>Windows</div>
+            <div>Ubuntu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certification">
+      <h2>Certifications</h2>
+      <div class="certification__inner">
+        <div class="certification__image">
+          <img src="https://via.placeholder.com/800x800" alt="Aquia Drupal Developer Certification">
+        </div>
+        <div class="certification__content">
+          <h3>Aquia Drupal Developer Certification</h3>
+          <h4>Drupal community involvement:</h4>
+          <ul>
+            <li>Drupal Association member</li>
+            <li>DrupalCon Attendee</li>
+            <li>Community Contributor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education__inner">
+        <div class="education__content">
+          <h3>Purdue University</h3>
+          <strong>GPA: 3.77/4.0</strong><br />
+          August 2006 - December 2009<br />
+          West Lafayette, IN<br />
+          Major in Computer Graphics Technology<br />
+          Minor in Business Management<br />
+          Graduated with academic honors<br />
+          Top 10 percentile of graduating class
+        </div>
+        <div class="education__content">
+          <h3>Madison Consolidated High School</h3>
+          <strong>GPA: 3.85/4.0</strong><br />
+          August 2002 - May 2006<br />
+          Madison, IN<br />
+          Graduated with a class rank of 32<br />
+          Academic Honors Diploma
+        </div>
+      </div>
+    </section>
+
+    <section id="organizations">
+      <h2>Organizations</h2>
+      <div class="organizations__inner">
+        <div class="organizations__content">
+          <h3>
+            Dubois County Emerging Leaders
+            <small>2010-2016</small>
+          </h3>
+          <p>A philanthropic giving circle.</p>
+          <p>Involved with leadership training exercises.</p>
+        </div>
+        <div class="organizations__content">
+          <h3>
+            Boy Scouts of America
+            <small>2002-2006</small>
+          </h3>
+          <p>Troop leader for 4 years. </p>
+          <p>Achieved the rank of Eagle Scout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonials__inner">
+        <div class="testimonial testimonial--active">
+          <p>I've enjoyed working with George at OFS for the past 4 years.</p>
+          <div class="testimonial__author">
+            Jake R.
+            <small>OFS Security Developer</small>
+            <img src="https://via.placeholder.com/150x150" alt="Jake R.">
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>George brought a fun personality into work and collaborated with me on several key projects.</p>
+          <div class="testimonial__author">
+            Mike M.
+            <small>CLI Web Developer</small>
+            <img src="https://via.placeholder.com/150x150" alt="Mike M.">
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>He's an amazing husband that would never fake a testimonial on my behalf.</p>
+          <div class="testimonial__author">
+            Cayla Mahoney-Potter
+            <small>A pretty cool wife</small>
+            <img src="https://via.placeholder.com/150x150" alt="Cayla Madison Mahoney-Potter">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <div class="hobbies__inner">
+        <p>You've made it this far!  You must really care about me, here's a bonus, my top four hobbies:</p>
+        <div class="hobbies__groups">
+          <div class="hobbies__group">
+            <img src="https://via.placeholder.com/800x800" alt="Animal lover">
+            <h3>Animal lover</h3>
+            <p>Two annoyingly friendly dogs, 1 hot tempered rabbit, and 1 kind rat. Vegan food devourer.</p>
+          </div>
+          <div class="hobbies__group">
+            <img src="https://via.placeholder.com/800x800" alt="Houseplants addict">
+            <h3>Houseplants addict</h3>
+            <p>At 150 plants, still cannot stop myself from buying more.</p>
+          </div>
+          <div class="hobbies__group">
+            <img src="https://via.placeholder.com/800x800" alt="Photography hobbyist">
+            <h3>Photography hobbyist</h3>
+            <p>Have been taking photographs since my first 1 megapixel camera in 2008.
+              <a href="#"
+                 class="link">View some of my photographs</a>.
+            </p>
+          </div>
+          <div class="hobbies__group">
+            <img src="https://via.placeholder.com/800x800" alt="Music super fan">
+            <h3>Music super fan</h3>
+            <p>Logged over 2,000 hours of listening on Spotify last year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect">
+      <h2>Connect</h2>
+      <div class="connect__inner">
+
+        <div class="connect__content">
+          <h3>Connect with me</h3>
+          <p>Reach out for further details or discussions.</p>
+          <div class="connect__social">
+            <a href="">
+              <img src="https://via.placeholder.com/150x150" alt="Github">
+            </a>
+            <a href="">
+              <img src="https://via.placeholder.com/150x150" alt="Linkedin">
+            </a>
+          </div>
+          <div>
+            <strong>Location:</strong> New Albany, IN<br />
+            <strong>Phone:</strong> 812.631.5833<br />
+            <strong>Email:</strong> georgpotter@gmail.com
+          </div>
+        </div>
+        <div class="connect__form">
+          <h3>Quick contact</h3>
+          <form>
+            <div class="form__group">
+              <label>Name</label>
+              <input type="email" class="form-control" placeholder="Name">
+            </div>
+            <div class="form__group">
+              <label>Email</label>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="form__group">
+              <label>Company</label>
+              <input type="email" placeholder="Company">
+            </div>
+            <div class="form__group">
+              <label>Message</label>
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="form__group">
+              <button type="submit" class="button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</template>
+
+<!--suppress JSUnusedGlobalSymbols -->
+<script>
+  export default {
+    name: 'IndexPage'
+  }
+</script>
+
+<!--suppress SassScssResolvedByNameOnly -->
+<style lang="scss" scoped>
+
+  section {
+    border-bottom: 1px solid #555;
+    min-height: calc(100vh - 3.2rem);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-top: 2rem;
+    background: $dark-background linear-gradient(335deg, #333 0%, #222 500px, #222 100%);
+
+    h2 {
+      position: absolute;
+      left: 2rem;
+      top: 0;
+      z-index: 1;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      line-height: 100%;
+      padding: 30px 1rem 0;
+      margin: 0;
+      width: 220px;
+      height: 110px;
+      background: #555;
+      border-bottom-left-radius: 120px;
+      border-bottom-right-radius: 120px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  section#intro {
+    background: radial-gradient(circle, #333 0%, #222 100%);
+
+    .intro__meta {
+      background: $primary-color;
+      color: #fff;
+      padding: 2rem;
+      z-index:50;
+      position: relative;
+      width: 70vh;
+      height: 70vh;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .intro__doodle {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      .intro__doodle__inner {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        position:absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  #about {
+    .about__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .about__image {
+        max-width: 40%;
+        border-radius: 100%;
+        box-shadow: 0 0 1rem rgb(0 0 0);
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .about__content {
+        text-align: left;
+        padding: 2rem;
+        max-width: 600px;
+
+        .button {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  section#experience {
+
+    .experience__inner {
+      padding: 2rem 0 2rem 2rem;
+
+      .experience__container {
+        display: flex;
+        margin-bottom: 2rem;
+        border: 5px solid #333;
+        border-right: 0;
+        border-top-left-radius: 1000px;
+        border-bottom-left-radius: 1000px;
+        overflow: hidden;
+        background: #222;
+        box-shadow: 0 0 1rem rgb(0 0 0);
+
+        .experience__image {
+          max-width: 30%;
+          flex: 30%;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            position: absolute;
+          }
+        }
+
+        .experience__content {
+          text-align: left;
+          padding: 1rem 3rem;
+          flex: 70%;
+        }
+
+      }
+
+    }
+  }
+
+  section#skills {
+
+    .skills__group {
+      margin-bottom: 4rem;
+
+      h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #333;
+        padding-bottom: 1rem;
+
+        img {
+          width: 3rem;
+          margin-right: 1rem;
+        }
+      }
+
+      .skills__set {
+        display: flex;
+        justify-content: stretch;
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          background: #333;
+          padding: 2rem;
+          margin: 0 0.5rem;
+          text-align: center;
+          flex-wrap: wrap;
+          font-size: 1.2rem;
+          border-radius: 20rem;
+
+          small {
+            display: block;
+            flex: 100%;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+  }
+
+  section#certification {
+
+    .certification__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .certification__image {
+        max-width: 40%;
+        border-radius: 100%;
+        box-shadow: 0 0 1rem rgb(0 0 0);
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .certification__content {
+        text-align: left;
+        padding: 2rem;
+        max-width: 600px;
+
+        .button {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  section#education {
+
+    .education__inner {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+
+      .education__content {
+        border: 1px solid #555;
+        padding: 3rem;
+        margin: 1rem;
+        background: #222;
+        flex: 50%;
+
+        h3 {
+          display: block;
+          margin: 0 0 2rem;
+          padding: 0 0 2rem;
+          border-bottom: 1px solid #333;
+        }
+      }
+    }
+  }
+
+  section#organizations {
+
+    .organizations__inner {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+
+      .organizations__content {
+        border: 1px solid #555;
+        padding: 3rem;
+        margin: 1rem;
+        background: #222;
+        flex: 50%;
+
+        h3 {
+          display: block;
+          margin: 0 0 2rem;
+          padding: 0 0 2rem;
+          border-bottom: 1px solid #333;
+
+          small {
+            display: block;
+            font-weight: 400;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  section#testimonials {
+
+    .testimonial {
+      position: absolute;
+      opacity: 0.0;
+      font-size: 1.4rem;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      &.testimonial--active {
+        opacity: 1;
+      }
+
+      .testimonial__author {
+        font-size: 1.2rem;
+
+        small {
+          display: block;
+          margin: 1rem 0;
+          font-size: 0.8rem;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+        }
+
+        img {
+          margin: 0 auto;
+          width: 64px;
+        }
+      }
+    }
+
+  }
+
+  section#connect {
+
+    .connect__inner {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+
+      .connect__content {
+        flex: 50%;
+        text-align: left;
+
+        .connect__social {
+          display: flex;
+
+          a {
+            display: block;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          img {
+            width: 64px;
+          }
+        }
+      }
+
+      .connect__form {
+        flex: 50%;
+        text-align: left;
+
+        form {
+
+          .form__group {
+            margin-bottom: 1rem;
+
+            label {
+              display: block;
+              margin-bottom: 0.5rem;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+              letter-spacing: 0.1rem;
+            }
+
+            input, textarea {
+              border-radius: 10rem;
+              background: #222;
+              border: 1px solid $primary-color;
+              padding: 1rem 1.5rem;
+              display: block;
+              width: 100%;
+            }
+
+            button.button {
+              background: $primary-color;
+              color: #222;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  section#hobbies {
+
+    .hobbies__inner {
+
+      .hobbies__groups {
+        display: flex;
+        padding: 1rem;
+
+        .hobbies__group {
+          flex: 25%;
+          margin: 2rem;
+          font-size: 0.8rem;
+          line-height: 130%;
+        }
+      }
+    }
+  }
+
+</style>
