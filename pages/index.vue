@@ -170,97 +170,181 @@
 
       <div class="skills__groups">
         <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Languages"> Languages</h3>
+          <h3><span class="skills__icon"><TerminalSvg /></span> Languages</h3>
           <div class="skills__set">
-            <div>
-              PHP
+            <div class="skills__individual">
+              <div>
+                PHP
+              </div>
             </div>
-            <div>
-              Javascript
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Frameworks"> Frameworks</h3>
-          <div class="skills__set">
-            <div>Drupal</div>
-            <div>Vue</div>
-            <div>Nuxt</div>
-            <div>Symphony</div>
-            <div>Wordpress</div>
-          </div>
-        </div>
-
-        <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Software"> Software</h3>
-          <div class="skills__set">
-            <div>
-              Jetbrains Suite
-              <small>Phpstorm, Webstorm</small>
-            </div>
-            <div>
-              Adobe creative suite
-              <small>Photoshop, Illustrator, InDesign</small>
+            <div class="skills__individual">
+              <div>
+                Javascript
+              </div>
             </div>
           </div>
         </div>
 
         <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Cloud software">Cloud software</h3>
+          <h3><span class="skills__icon"><ConstructionSvg /></span> Frameworks</h3>
           <div class="skills__set">
-            <div>Google documents</div>
-            <div>Shopify</div>
-            <div>Mailchimp</div>
-            <div>Jira</div>
-          </div>
-        </div>
-
-        <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Cloud platforms"> Cloud platforms</h3>
-          <div class="skills__set">
-            <div>
-              AWS
-              <small>S3, Lambda, Cloudfront, CloudSearch</small>
+            <div class="skills__individual">
+              <div>
+                Drupal
+              </div>
             </div>
-            <div>
-              Google Cloud
-              <small>Google Maps API, Compute Engine</small>
+            <div class="skills__individual">
+              <div>
+                Vue
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Version control"> Version control</h3>
-          <div class="skills__set">
-            <div>
-              Git
-              <small>Gitlab, Github</small></div>
-            <div>
-              SVN
-              <small>TortoiseSvn</small>
+            <div class="skills__individual">
+              <div>
+                Nuxt
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Symphony
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Wordpress
+              </div>
             </div>
           </div>
         </div>
 
         <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Development principles"> Development principles</h3>
+          <h3><span class="skills__icon"><ApplicationSvg /></span> Software</h3>
           <div class="skills__set">
-            <div>Code development</div>
-            <div>Containerization</div>
-            <div>Deployment pipelines</div>
-            <div>Code testing</div>
-            <div>Documentation and training</div>
-            <div>Coding standards</div>
-            <div>SEO and accessibility testing</div>
+            <div class="skills__individual">
+              <div>
+                Jetbrains Suite
+                <small>Phpstorm, Webstorm</small>
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Adobe creative suite
+                <small>Photoshop, Illustrator, InDesign</small>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="skills__group">
-          <h3><img src="https://via.placeholder.com/400x400" alt="Operating systems"> OS</h3>
+          <h3><span class="skills__icon"><CloudApplicationSvg /></span> Cloud software</h3>
           <div class="skills__set">
-            <div>Windows</div>
-            <div>Ubuntu</div>
+            <div class="skills__individual">
+              <div>
+                Google documents
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Shopify
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Mailchimp
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Jira
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><span class="skills__icon"><CloudSvg /></span> Cloud platforms</h3>
+          <div class="skills__set">
+            <div class="skills__individual">
+              <div>
+                AWS
+                <small>S3, Lambda, Cloudfront, CloudSearch</small>
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Google Cloud
+                <small>Google Maps API, Compute Engine</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><span class="skills__icon"><CommitSvg /></span> Version control</h3>
+          <div class="skills__set">
+            <div class="skills__individual">
+              <div>
+                Git
+                <small>Gitlab, Github</small>
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                SVN
+                <small>TortoiseSvn</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><span class="skills__icon"><CodeSvg /></span> Development principles</h3>
+          <div class="skills__set">
+            <div class="skills__individual">
+              <div>
+                Code development
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Containerization
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Deployment pipelines
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Code testing
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Documentation and training
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Coding standards
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3><span class="skills__icon"><DesktopSvg /></span> OS</h3>
+          <div class="skills__set">
+            <div class="skills__individual">
+              <div>
+                Windows
+              </div>
+            </div>
+            <div class="skills__individual">
+              <div>
+                Ubuntu
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -447,8 +531,27 @@
 
 <!--suppress JSUnusedGlobalSymbols -->
 <script>
+  import ApplicationSvg from '~/components/svgs/ApplicationSvg.vue'
+  import CloudApplicationSvg from '~/components/svgs/CloudApplicationSvg.vue'
+  import CloudSvg from '~/components/svgs/CloudSvg.vue'
+  import CodeSvg from '~/components/svgs/CodeSvg.vue'
+  import CommitSvg from '~/components/svgs/CommitSvg.vue'
+  import ConstructionSvg from '~/components/svgs/ConstructionSvg.vue'
+  import DesktopSvg from '~/components/svgs/DesktopSvg.vue'
+  import TerminalSvg from '~/components/svgs/TerminalSvg.vue'
+
   export default {
-    name: 'IndexPage'
+    name: 'IndexPage',
+    components: {
+      ApplicationSvg,
+      CloudApplicationSvg,
+      CloudSvg,
+      CodeSvg,
+      CommitSvg,
+      ConstructionSvg,
+      DesktopSvg,
+      TerminalSvg
+    }
   }
 </script>
 
@@ -616,6 +719,25 @@
         border-bottom: 1px solid #333;
         padding-bottom: 1rem;
 
+        .skills__icon {
+          display: block;
+          padding: 1rem;
+          border-radius: 2rem;
+          background: $primary-color;
+          width: 4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1rem;
+
+          &:deep(svg) {
+            fill: $white;
+            width: 100%;
+          }
+
+        }
+
         img {
           width: 3rem;
           margin-right: 1rem;
@@ -625,24 +747,30 @@
       .skills__set {
         display: flex;
         justify-content: stretch;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
 
-        div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex: 1;
-          background: #333;
-          padding: 2rem;
-          margin: 0 0.5rem;
-          text-align: center;
-          flex-wrap: wrap;
-          font-size: 1.2rem;
-          border-radius: 20rem;
+        .skills__individual {
+          flex: 50%;
+          max-width: calc(50% - 1rem);
 
-          small {
-            display: block;
-            flex: 100%;
-            font-size: 0.7rem;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            padding: 2rem;
+            text-align: center;
+            flex-wrap: wrap;
+            font-size: 1.2rem;
+            border-radius: 20rem;
+
+            small {
+              display: block;
+              flex: 100%;
+              font-size: 0.7rem;
+            }
           }
         }
       }
