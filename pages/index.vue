@@ -1,6 +1,5 @@
 <template>
   <main>
-
     <section id="intro">
       <div class="intro__meta">
       <h1>George Mahoney-Potter</h1>
@@ -21,7 +20,7 @@
       <div class="intro__doodle">
       <css-doodle class="intro__doodle__inner">
         <!--suppress CssInvalidAtRule, CssInvalidPseudoSelector -->
-        <style>
+        <component :is="'style'">
           :doodle {
             @grid: 25x1 / 18vmin;
           }
@@ -57,7 +56,7 @@
                 rotateZ(calc(@p(-1, 1) * @r(30deg, 330deg)))
             }
           }
-        </style>
+        </component>
       </css-doodle>
       </div>
       <!-- @formatter on -->
@@ -550,8 +549,8 @@
   import TerminalSvg from '~/components/svgs/TerminalSvg.vue'
   import FacebookSvg from '~/components/svgs/FacebookSvg.vue'
   import LinkedInSvg from '~/components/svgs/LinkedInSvg.vue'
-  import GitHubSvg from '@/components/svgs/GitHubSvg.vue'
-  import StackOverflowSvg from '@/components/svgs/StackOverflowSvg.vue'
+  import GitHubSvg from '~/components/svgs/GitHubSvg.vue'
+  import StackOverflowSvg from '~/components/svgs/StackOverflowSvg.vue'
 
   export default {
     name: 'IndexPage',
@@ -750,7 +749,6 @@
         padding-bottom: 1rem;
 
         .skills__icon {
-          display: block;
           padding: 1rem;
           border-radius: 2rem;
           background: $primary-color;
@@ -779,7 +777,6 @@
 
       .skills__set {
         display: flex;
-        justify-content: stretch;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;

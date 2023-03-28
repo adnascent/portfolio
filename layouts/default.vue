@@ -27,7 +27,7 @@
         </a>
       </nav>
     </header>
-    <Nuxt />
+    <slot />
     <footer id="footer">
       <div class="footer__inner">
         <img src="george-mahoney-potter-remote.jpg" alt="Thank you for visiting!" title="Thank you for visiting!">
