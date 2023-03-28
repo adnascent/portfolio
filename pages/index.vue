@@ -12,6 +12,11 @@
         <li>Leader</li>-->
       </ul>
       </div>
+      <video src="background.mp4?v=2"
+             autoplay
+             muted
+             loop
+             class="intro__video" />
       <!-- @formatter off -->
       <div class="intro__doodle">
       <css-doodle class="intro__doodle__inner">
@@ -29,9 +34,7 @@
 
           transform: rotate(calc(@i * 5deg));
           border-radius: 50%;
-          border: 1px solid hsla(
-          calc(10 + 4 * @i), 70%, 68%, @r.8
-          );
+          border: 5px solid hsla(calc(10 + 4 * @i), 70%, 68%, @r.8);
 
           transform-style: preserve-3d;
           will-change: transform, opacity;
@@ -50,8 +53,8 @@
               transform:
                 translate3d(0, 0, 45vmin)
                 rotateX(calc(@p(-1, 1) * @r(30deg, 330deg)))
-            rotateY(calc(@p(-1, 1) * @r(30deg, 330deg)))
-            rotateZ(calc(@p(-1, 1) * @r(30deg, 330deg)))
+                rotateY(calc(@p(-1, 1) * @r(30deg, 330deg)))
+                rotateZ(calc(@p(-1, 1) * @r(30deg, 330deg)))
             }
           }
         </style>
@@ -485,10 +488,16 @@
           <p>Reach out for further details or discussions.</p>
           <div class="connect__social">
             <a href="">
-              <img src="https://via.placeholder.com/150x150" alt="Github">
+              <LinkedInSvg />
             </a>
             <a href="">
-              <img src="https://via.placeholder.com/150x150" alt="Linkedin">
+              <FacebookSvg />
+            </a>
+            <a href="">
+              <GitHubSvg />
+            </a>
+            <a href="">
+              <StackOverflowSvg />
             </a>
           </div>
           <div>
@@ -539,6 +548,10 @@
   import ConstructionSvg from '~/components/svgs/ConstructionSvg.vue'
   import DesktopSvg from '~/components/svgs/DesktopSvg.vue'
   import TerminalSvg from '~/components/svgs/TerminalSvg.vue'
+  import FacebookSvg from '~/components/svgs/FacebookSvg.vue'
+  import LinkedInSvg from '~/components/svgs/LinkedInSvg.vue'
+  import GitHubSvg from '@/components/svgs/GitHubSvg.vue'
+  import StackOverflowSvg from '@/components/svgs/StackOverflowSvg.vue'
 
   export default {
     name: 'IndexPage',
@@ -550,7 +563,11 @@
       CommitSvg,
       ConstructionSvg,
       DesktopSvg,
-      TerminalSvg
+      TerminalSvg,
+      FacebookSvg,
+      LinkedInSvg,
+      GitHubSvg,
+      StackOverflowSvg,
     }
   }
 </script>
@@ -566,7 +583,7 @@
     display: flex;
     position: relative;
     padding-top: 2rem;
-    background: $dark-background linear-gradient(335deg, #333 0%, #222 500px, #222 100%);
+    background: $background linear-gradient(335deg, #F8F2DF 0%, $background 500px, $background 100%);
 
     h2 {
       position: absolute;
@@ -575,13 +592,14 @@
       z-index: 1;
       font-size: 1.2rem;
       text-transform: uppercase;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.05rem;
       line-height: 100%;
       padding: 30px 1rem 0;
       margin: 0;
       width: 220px;
       height: 110px;
-      background: #555;
+      background: $primary-color;
+      color: $white;
       border-bottom-left-radius: 120px;
       border-bottom-right-radius: 120px;
     }
@@ -593,21 +611,32 @@
   }
 
   section#intro {
-    background: radial-gradient(circle, #333 0%, #222 100%);
+    background: $primary-color;
+    position: relative;
+    height: 100vh;
+
+    .intro__video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 500;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+    }
 
     .intro__meta {
-      background: $primary-color;
       color: #fff;
-      padding: 2rem;
-      z-index:50;
+      z-index: 550;
       position: relative;
-      width: 70vh;
-      height: 70vh;
       border-radius: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      font-size: 60px;
+      mix-blend-mode: difference;
     }
 
     h1 {
@@ -675,13 +704,13 @@
       .experience__container {
         display: flex;
         margin-bottom: 2rem;
-        border: 5px solid #333;
+        border: 2px solid $secondary-color;
         border-right: 0;
         border-top-left-radius: 1000px;
         border-bottom-left-radius: 1000px;
         overflow: hidden;
-        background: #222;
-        box-shadow: 0 0 1rem rgb(0 0 0);
+        background: $background;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 
         .experience__image {
           max-width: 30%;
@@ -699,7 +728,7 @@
 
         .experience__content {
           text-align: left;
-          padding: 1rem 3rem;
+          padding: 3rem 3rem;
           flex: 70%;
         }
 
@@ -763,7 +792,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #333;
+            background: $secondary-color;
+            color: #fff;
             padding: 2rem;
             text-align: center;
             flex-wrap: wrap;
@@ -792,19 +822,19 @@
       .certification__image {
         max-width: 40%;
         border-radius: 1000px;
-        box-shadow: 0 0 1rem rgb(0 0 0);
+        box-shadow: 0 0 1rem rgb(0, 0, 0, 0.2);
         padding-bottom: 40%;
         position: relative;
-        background: #1a89c9;
+        background: $secondary-color;
         width: 800px;
 
         img {
           object-fit: contain;
           position: absolute;
-          left: 10%;
-          top: 10%;
-          width: 80%;
-          height: 80%;
+          left: 20%;
+          top: 20%;
+          width: 60%;
+          height: 60%;
         }
       }
 
@@ -828,17 +858,17 @@
       max-width: 1200px;
 
       .education__content {
-        border: 1px solid #555;
+        border: 1px solid $primary-color;
         padding: 3rem;
         margin: 1rem;
-        background: #222;
+        background: $background;
         flex: 50%;
 
         h3 {
           display: block;
           margin: 0 0 2rem;
           padding: 0 0 2rem;
-          border-bottom: 1px solid #333;
+          border-bottom: 1px solid $primary-color;
         }
       }
     }
@@ -852,17 +882,17 @@
       max-width: 1200px;
 
       .organizations__content {
-        border: 1px solid #555;
+        border: 1px solid $primary-color;
         padding: 3rem;
         margin: 1rem;
-        background: #222;
+        background: $background;
         flex: 50%;
 
         h3 {
           display: block;
           margin: 0 0 2rem;
           padding: 0 0 2rem;
-          border-bottom: 1px solid #333;
+          border-bottom: 1px solid $primary-color;
 
           small {
             display: block;
@@ -928,7 +958,7 @@
             margin-bottom: 1rem;
           }
 
-          img {
+          :deep(svg), img {
             width: 64px;
           }
         }
@@ -953,7 +983,6 @@
 
             input, textarea {
               border-radius: 10rem;
-              background: #222;
               border: 1px solid $primary-color;
               padding: 1rem 1.5rem;
               display: block;
@@ -962,7 +991,7 @@
 
             button.button {
               background: $primary-color;
-              color: #222;
+              color: $white;
             }
           }
         }

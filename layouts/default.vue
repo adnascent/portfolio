@@ -1,13 +1,30 @@
 <template>
   <main>
-    <header id="header">
+    <header id="header"
+            ref="headerObserver"
+    class="header--inverted">
       <a id="logo" href="#first">Potter Portfolio</a>
       <nav id="menu">
-        <a href="#second">About</a>
-        <a href="#third">Experience</a>
-        <a href="#fourth">Skills</a>
-        <a href="#fifth">Accolades</a>
-        <a href="#sixth">Connect</a>
+        <a href="#second"
+           ref="aboutMenu">
+          About
+        </a>
+        <a href="#third"
+           ref="experienceMenu">
+          Experience
+        </a>
+        <a href="#fourth"
+           ref="skillsMenu">
+          Skills
+        </a>
+        <a href="#fifth"
+           ref="accoladesMenu">
+          Accolades
+        </a>
+        <a href="#sixth"
+           ref="connectMenu">
+          Connect
+        </a>
       </nav>
     </header>
     <Nuxt />
@@ -25,7 +42,55 @@
 
 <script>
   export default {
-    name: 'default'
+    name: 'default',
+    data: function() {
+      return {
+        observer: null
+      }
+    },
+    mounted() {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          console.log(entry.target.id)
+          if (entry && entry.isIntersecting && entry.target.id) {
+            document.querySelectorAll("#menu a").forEach((element) => {
+              element.classList.remove('active')
+            })
+            const entryId = entry.target.id
+            const accolades = ['certification', 'education', 'organizations', 'testimonials', 'hobbies']
+            if (accolades.includes(entryId) && this.$refs.accoladesMenu) {
+              this.$refs.accoladesMenu.classList.add('active')
+            }
+            else if (this.$refs[entry.target.id + 'Menu']) {
+              this.$refs[entry.target.id + 'Menu'].classList.add('active')
+            }
+          }
+        },
+        {
+          rootMargin: "-40% 0% -40%",
+        }
+      )
+
+      document.querySelectorAll("section").forEach((section) => {
+        this.observer.observe(section)
+      })
+
+      // Observer for if the user scrolls to the top of the page
+      const observerHeader = new IntersectionObserver(
+        ([entry]) => {
+          console.log(entry)
+          if (entry && this.$refs.headerObserver) {
+            if (entry.isIntersecting) {
+              this.$refs.headerObserver.classList.add('header--inverted')
+            } else {
+              this.$refs.headerObserver.classList.remove('header--inverted')
+            }
+          }
+        },
+        { rootMargin: "-100% 0% 0%" }
+      )
+      observerHeader.observe(document.querySelector("#intro"))
+    }
   }
 </script>
 
@@ -33,25 +98,52 @@
 <style lang="scss" scoped>
 
   #header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    z-index: 20;
-    background: $secondary-color;
+    background: $background;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #555;
+    padding: 0 1rem;
+    z-index: 1000;
+    background: $primary-color;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.25);
+
+    &, * {
+      transition: all 0.5s ease;
+    }
+
+    &.header--inverted {
+      background: none;
+      border-bottom: 1px solid #555;
+      box-shadow: none;
+
+      #logo {
+        padding: 1.25rem;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      nav {
+        a {
+          padding: 1rem;
+        }
+      }
+    }
 
     #logo {
-      padding: 1rem;
+      padding: 0.5rem;
       font-family: $secondary-font;
       font-weight: 700;
       font-size: 1.2rem;
     }
 
     a {
-      color: $primary-color;
+      color: $white;
       text-decoration: none;
     }
 
@@ -61,9 +153,13 @@
 
       a {
         display: block;
-        padding: 1rem;
+        padding: 0.75rem 1rem;
         font-size: 1rem;
         line-height: 1.2rem;
+
+        &.active {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -76,7 +172,7 @@
     position: relative;
     padding-top: 2rem;
     background: $primary-color;
-    color: #222;
+    color: $white;
 
     img {
       max-width: 600px;
@@ -84,8 +180,8 @@
     }
 
     a.button {
-      color: $secondary-color;
-      border-color: $secondary-color;
+      color: $white;
+      border-color: $white;
     }
   }
 
