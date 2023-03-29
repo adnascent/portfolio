@@ -30,7 +30,7 @@
     <slot />
     <footer id="footer">
       <div class="footer__inner">
-        <img src="george-mahoney-potter-remote.jpg" alt="Thank you for visiting!" title="Thank you for visiting!">
+        <img src="/george-mahoney-potter-remote.jpg" alt="Thank you for visiting!" title="Thank you for visiting!">
         <h2>Thank You for Visiting!</h2>
         <a href="" class="button">
           Download this website

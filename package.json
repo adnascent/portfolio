@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxi clean && nuxi dev",
-    "build": "nuxi build",
-    "start": "nuxi start",
+    "build": "nuxt build",
+    "dev": "nuxi dev",
     "generate": "nuxi generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
-  },
-  "dependencies": {
-    "nuxt": "^3.3.2",
-    "@nuxt/vite-builder": "^3.3.2"
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare",
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
+    "nuxt": "^3.3.2",
+    "@nuxt/vite-builder": "^3.3.2",
     "sass": "^1.60.0",
-    "push-dir": "^0.4.1"
+    "gh-pages": "^4.0.0"
   }
 }

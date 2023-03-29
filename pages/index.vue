@@ -11,7 +11,7 @@
         <li>Leader</li>-->
       </ul>
       </div>
-      <video src="background.mp4?v=2"
+      <video src="/background.mp4"
              autoplay
              muted
              loop
@@ -66,7 +66,7 @@
       <h2>About</h2>
       <div class="about__inner">
         <div class="about__image">
-          <img src="george-mahoney-potter.jpg" alt="About me">
+          <img src="/george-mahoney-potter.jpg" alt="About me">
         </div>
         <div class="about__content">
           <h3>Hello there!</h3>
@@ -90,7 +90,7 @@
         <div class="experience__container">
           <div class="experience__image">
             <div>
-            <img src="ofs.jpg" alt="OFS Brands examples">
+            <img src="/ofs.jpg" alt="OFS Brands examples">
             </div>
           </div>
           <div class="experience__content">
@@ -117,7 +117,7 @@
         </div>
         <div class="experience__container">
           <div class="experience__image">
-            <img src="cli.jpg" alt="CLI Examples">
+            <img src="/cli.jpg" alt="CLI Examples">
           </div>
           <div class="experience__content">
             <h3>CLI</h3>
@@ -141,7 +141,7 @@
         </div>
         <div class="experience__container">
           <div class="experience__image">
-            <img src="ridetech.jpg" alt="RideTech examples">
+            <img src="/ridetech.jpg" alt="RideTech examples">
           </div>
           <div class="experience__content">
             <h3>RideTech</h3>
@@ -356,7 +356,7 @@
       <h2>Certifications</h2>
       <div class="certification__inner">
         <div class="certification__image">
-          <img src="aquia.png" alt="Aquia Drupal Developer Certification">
+          <img src="/aquia.png" alt="Aquia Drupal Developer Certification">
         </div>
         <div class="certification__content">
           <h3>Aquia Drupal Developer Certification</h3>
@@ -452,17 +452,17 @@
         <p>You've made it this far!  You must really care about me, here's a bonus, my top four hobbies:</p>
         <div class="hobbies__groups">
           <div class="hobbies__group">
-            <img src="dogs-v2.jpg" alt="Animal lover">
+            <img src="/dogs-v2.jpg" alt="Animal lover">
             <h3>Animal lover</h3>
             <p>Two annoyingly friendly dogs, 1 hot tempered rabbit.</p>
           </div>
           <div class="hobbies__group">
-            <img src="houseplants.jpg" alt="Houseplants addict">
+            <img src="/houseplants.jpg" alt="Houseplants addict">
             <h3>Houseplants addict</h3>
             <p>At 150 plants owned, down to 149 next week.</p>
           </div>
           <div class="hobbies__group">
-            <img src="photography.jpg" alt="Photography hobbyist">
+            <img src="/photography.jpg" alt="Photography hobbyist">
             <h3>Photography hobbyist</h3>
             <p>Since my first 1 megapixel camera in 2008.
               <a href="#"
@@ -470,7 +470,7 @@
             </p>
           </div>
           <div class="hobbies__group">
-            <img src="music.jpg" alt="Music super fan">
+            <img src="/music.jpg" alt="Music super fan">
             <h3>Music super fan</h3>
             <p>Logged over 2,000 hours of listening on Spotify last year.</p>
           </div>
