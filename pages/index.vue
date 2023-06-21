@@ -2,7 +2,9 @@
   <main>
     <section id="intro">
       <div class="intro__meta">
-      <h1>George Mahoney-Potter</h1>
+      <h1>
+        George <span>Mahoney&#x2011;Potter</span>
+      </h1>
       <ul>
         <li>Web developer</li>
         <!--<li>Collaborator</li>
@@ -449,7 +451,7 @@
     <section id="hobbies">
       <h2>Hobbies</h2>
       <div class="hobbies__inner">
-        <p>You've made it this far!  You must really care about me, here's a bonus, my top four hobbies:</p>
+        <p class="hobbies__description">You've made it this far!  You must really care about me, here's a bonus, my top four hobbies:</p>
         <div class="hobbies__groups">
           <div class="hobbies__group">
             <img src="/dogs-v2.jpg" alt="Animal lover">
@@ -582,7 +584,7 @@
     display: flex;
     position: relative;
     padding-top: 2rem;
-    background: $background linear-gradient(335deg, #F8F2DF 0%, $background 500px, $background 100%);
+    background: $background linear-gradient(335deg, $background-dark 0%, $background 500px, $background 100%);
 
     h2 {
       position: absolute;
@@ -634,12 +636,21 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      font-size: 60px;
+      font-size: 3rem;
       mix-blend-mode: difference;
+
+      @media (max-width: $screen-md) {
+        font-size: 2rem;
+      }
     }
 
     h1 {
       margin: 0;
+      line-height: 100%;
+
+      @media (max-width: $screen-md) {
+        font-size: 3rem;
+      }
     }
 
     ul {
@@ -672,11 +683,24 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: $screen-md) {
+        flex-wrap: wrap;
+      }
+
       .about__image {
         max-width: 600px;
         width: 40%;
         border-radius: 100%;
         box-shadow: 0 0 1rem rgb(0 0 0);
+
+        @media (max-width: $screen-lg) {
+          width: 30%;
+        }
+
+        @media (max-width: $screen-md) {
+          width: 100%;
+          max-width: 400px;
+        }
 
         img {
           object-fit: cover;
@@ -700,6 +724,10 @@
     .experience__inner {
       padding: 2rem 0 2rem 2rem;
 
+      @media (max-width: $screen-sm) {
+        padding: 2rem;
+      }
+
       .experience__container {
         display: flex;
         margin-bottom: 2rem;
@@ -711,10 +739,26 @@
         background: $background;
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 
+        @media (max-width: $screen-sm) {
+          flex-wrap: wrap;
+          border-radius: 0.25rem;
+          border: 2px solid $secondary-color;
+        }
+
         .experience__image {
           max-width: 30%;
           flex: 30%;
           position: relative;
+
+          @media (max-width: $screen-md) {
+            max-width: 40%;
+            flex: 40%;
+          }
+
+          @media (max-width: $screen-sm) {
+            max-width: 100%;
+            flex: 100%;
+          }
 
           img {
             width: 100%;
@@ -722,6 +766,12 @@
             object-fit: cover;
             border-radius: 0;
             position: absolute;
+
+            @media (max-width: $screen-sm) {
+              position: relative;
+              object-fit: fill;
+              border-bottom: 2px solid $secondary-color;
+            }
           }
         }
 
@@ -729,6 +779,15 @@
           text-align: left;
           padding: 3rem 3rem;
           flex: 70%;
+
+          @media (max-width: $screen-md) {
+            flex: 60%;
+            padding: 2rem;
+          }
+
+          @media (max-width: $screen-sm) {
+            flex: 100%;
+          }
         }
 
       }
@@ -738,8 +797,13 @@
 
   section#skills {
 
+    @media (max-width: $screen-md) {
+      padding-top: 8rem;
+    }
+
     .skills__group {
       margin-bottom: 4rem;
+      padding: 0 2rem;
 
       h3 {
         display: flex;
@@ -785,6 +849,11 @@
           flex: 50%;
           max-width: calc(50% - 1rem);
 
+          @media (max-width: $screen-sm) {
+            flex: 100%;
+            max-width: 100%;
+          }
+
           div {
             display: flex;
             justify-content: center;
@@ -816,6 +885,10 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: $screen-sm) {
+        flex-wrap: wrap;
+      }
+
       .certification__image {
         max-width: 40%;
         border-radius: 1000px;
@@ -824,6 +897,16 @@
         position: relative;
         background: $secondary-color;
         width: 800px;
+
+        @media (max-width: $screen-md) {
+          max-width: 50%;
+        }
+
+        @media (max-width: $screen-sm) {
+          max-width: 100%;
+          width: 100%;
+          padding-bottom: 100%;
+        }
 
         img {
           object-fit: contain;
@@ -849,10 +932,18 @@
 
   section#education {
 
+    @media (max-width: $screen-md) {
+      padding-top: 3rem;
+    }
+
     .education__inner {
       display: flex;
       width: 100%;
       max-width: 1200px;
+
+      @media (max-width: $screen-sm) {
+        flex-wrap: wrap;
+      }
 
       .education__content {
         border: 1px solid $primary-color;
@@ -873,10 +964,18 @@
 
   section#organizations {
 
+    @media (max-width: $screen-md) {
+      padding-top: 3rem;
+    }
+
     .organizations__inner {
       display: flex;
       width: 100%;
       max-width: 1200px;
+
+      @media (max-width: $screen-sm) {
+        flex-wrap: wrap;
+      }
 
       .organizations__content {
         border: 1px solid $primary-color;
@@ -936,11 +1035,16 @@
   }
 
   section#connect {
+    padding: 7rem 2rem 2rem 2rem;
 
     .connect__inner {
       display: flex;
       width: 100%;
       max-width: 1200px;
+
+      @media (max-width: $screen-sm) {
+        flex-wrap: wrap;
+      }
 
       .connect__content {
         flex: 50%;
@@ -998,18 +1102,31 @@
   }
 
   section#hobbies {
+    padding-top: 7rem;
+
+    .hobbies__description {
+      padding: 0 2rem;
+    }
 
     .hobbies__inner {
 
       .hobbies__groups {
         display: flex;
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
+
+        @media (max-width: $screen-sm) {
+          flex-wrap: wrap;
+        }
 
         .hobbies__group {
           flex: 25%;
-          margin: 2rem;
+          padding: 2rem;
           font-size: 0.8rem;
           line-height: 130%;
+
+          @media (max-width: $screen-sm) {
+            flex: 50%;
+          }
         }
       }
     }

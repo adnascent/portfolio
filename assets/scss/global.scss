@@ -44,25 +44,30 @@ a {
  * Custom scroll bar.
  */
 ::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
+  width: 12px;
 }
 ::-webkit-scrollbar-button {
   width: 0;
   height: 0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cccccc;
-  border: 0 none #cccccc;
+  background: $secondary-color;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #eeeeee;
+  background: darken($secondary-color, 10%);
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #ffffff;
+  background: $primary-color;
 }
 ::-webkit-scrollbar-track {
-  background: #222;
-  border-left: 1px solid #555;
+  background: $background-dark;
+}
+
+.svg-fill {
+  fill: $primary-color;
+}
+
+.svg-stroke {
+  stroke: $primary-color;
 }

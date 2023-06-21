@@ -1,11 +1,8 @@
 import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
-  ssr: 'static',
-  target: 'static',
-  hashMode: true,
   app: {
-    telemetry: false,
-    pageTransition: true,
+    // For GitHub pages.
+    //baseURL: '/portfolio/',
     head: {
       title: 'Potter Portfolio - Web Developer',
       htmlAttrs: {
@@ -43,10 +40,9 @@ export default defineNuxtConfig({
       ]
     },
   },
-  router: {
-    mode: 'hash',
-    options: {
-      hashMode: true
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => ['css-doodle'].includes(tag)
     }
   },
   css: [
