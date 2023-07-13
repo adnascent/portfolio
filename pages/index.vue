@@ -424,8 +424,8 @@
         <div class="testimonial testimonial--active">
           <p>I've enjoyed working with George at OFS for the past 4 years.</p>
           <div class="testimonial__author">
-            Jake R.
-            <small>OFS Security Developer</small>
+            John Smith
+            <small>OFS</small>
             <img src="https://via.placeholder.com/150x150" alt="Jake R.">
           </div>
         </div>
