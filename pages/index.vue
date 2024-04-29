@@ -81,7 +81,11 @@
             Please take a look below at some of my professional accomplishments over the years.
             If you find that I am a great fit for your working needs, please contact me and I would love to respond.
           </p>
-          <a href="#" class="button">Download resume</a>
+          <a href="/george-mahoney-potter-resume.pdf"
+             class="button"
+             target="_blank">
+            View resume
+          </a>
         </div>
       </div>
     </section>
@@ -89,7 +93,7 @@
     <section id="experience">
       <h2>Experience</h2>
       <div class="experience__inner">
-        <div class="experience__container">
+        <div class="experience__container animate-fade">
           <div class="experience__image">
             <div>
             <img src="/ofs.jpg" alt="OFS Brands examples">
@@ -117,7 +121,7 @@
             ticket system and delivering website changes from inter departmental requests.</p>
           </div>
         </div>
-        <div class="experience__container">
+        <div class="experience__container animate-fade">
           <div class="experience__image">
             <img src="/cli.jpg" alt="CLI Examples">
           </div>
@@ -141,7 +145,7 @@
             maintain databases and contribute C# code on asp.net projects.</p>
           </div>
         </div>
-        <div class="experience__container">
+        <div class="experience__container animate-fade">
           <div class="experience__image">
             <img src="/ridetech.jpg" alt="RideTech examples">
           </div>
@@ -176,12 +180,12 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><TerminalSvg /></span> Languages</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 PHP
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Javascript
               </div>
@@ -192,27 +196,27 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><ConstructionSvg /></span> Frameworks</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Drupal
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Vue
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Nuxt
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Symphony
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Wordpress
               </div>
@@ -223,13 +227,13 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><ApplicationSvg /></span> Software</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Jetbrains Suite
                 <small>Phpstorm, Webstorm</small>
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Adobe creative suite
                 <small>Photoshop, Illustrator, InDesign</small>
@@ -241,22 +245,22 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><CloudApplicationSvg /></span> Cloud software</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Google documents
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Shopify
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Mailchimp
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Jira
               </div>
@@ -267,13 +271,13 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><CloudSvg /></span> Cloud platforms</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 AWS
                 <small>S3, Lambda, Cloudfront, CloudSearch</small>
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Google Cloud
                 <small>Google Maps API, Compute Engine</small>
@@ -285,13 +289,13 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><CommitSvg /></span> Version control</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Git
                 <small>Gitlab, Github</small>
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 SVN
                 <small>TortoiseSvn</small>
@@ -303,32 +307,32 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><CodeSvg /></span> Development principles</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Code development
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Containerization
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Deployment pipelines
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Code testing
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Documentation and training
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Coding standards
               </div>
@@ -339,12 +343,12 @@
         <div class="skills__group">
           <h3><span class="skills__icon"><DesktopSvg /></span> OS</h3>
           <div class="skills__set">
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Windows
               </div>
             </div>
-            <div class="skills__individual">
+            <div class="skills__individual animate-fade">
               <div>
                 Ubuntu
               </div>
@@ -422,27 +426,11 @@
       <h2>Testimonials</h2>
       <div class="testimonials__inner">
         <div class="testimonial testimonial--active">
-          <p>I've enjoyed working with George at OFS for the past 4 years.</p>
-          <div class="testimonial__author">
-            John Smith
-            <small>OFS</small>
-            <img src="https://via.placeholder.com/150x150" alt="Jake R.">
-          </div>
-        </div>
-        <div class="testimonial">
-          <p>George brought a fun personality into work and collaborated with me on several key projects.</p>
+          <p>"People at CLI are still saying, 'I wish George were still here, he would know how to do this'"</p>
           <div class="testimonial__author">
             Mike M.
-            <small>CLI Web Developer</small>
-            <img src="https://via.placeholder.com/150x150" alt="Mike M.">
-          </div>
-        </div>
-        <div class="testimonial">
-          <p>He's an amazing husband that would never fake a testimonial on my behalf.</p>
-          <div class="testimonial__author">
-            Cayla Mahoney-Potter
-            <small>A pretty cool wife</small>
-            <img src="https://via.placeholder.com/150x150" alt="Cayla Madison Mahoney-Potter">
+            <small>CLI</small>
+            <img src="/cli-testimonial.jpg" alt="Mike M.">
           </div>
         </div>
       </div>
@@ -467,7 +455,7 @@
             <img src="/photography.jpg" alt="Photography hobbyist">
             <h3>Photography hobbyist</h3>
             <p>Since my first 1 megapixel camera in 2008.
-              <a href="#"
+              <a href="https://adnascent.tumblr.com/"
                  class="link">View some of my photographs</a>.
             </p>
           </div>
@@ -488,21 +476,21 @@
           <h3>Connect with me</h3>
           <p>Reach out for further details or discussions.</p>
           <div class="connect__social">
-            <a href="">
+            <a href="https://www.linkedin.com/in/george-potter-487059187/">
               <LinkedInSvg />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/georgejpotter">
               <FacebookSvg />
             </a>
-            <a href="">
-              <GitHubSvg />
-            </a>
-            <a href="">
+            <a href="https://drupal.stackexchange.com/users/80942/george-potter">
               <StackOverflowSvg />
+            </a>
+            <a href="https://www.drupal.org/u/gpotter">
+              <DrupalContribSvg />
             </a>
           </div>
           <div>
-            <strong>Location:</strong> New Albany, IN<br />
+            <strong>Location:</strong> Muncie, IN<br />
             <strong>Phone:</strong> 812.631.5833<br />
             <strong>Email:</strong> georgpotter@gmail.com
           </div>
@@ -553,6 +541,7 @@
   import LinkedInSvg from '~/components/svgs/LinkedInSvg.vue'
   import GitHubSvg from '~/components/svgs/GitHubSvg.vue'
   import StackOverflowSvg from '~/components/svgs/StackOverflowSvg.vue'
+  import DrupalContribSvg from '~/components/svgs/DrupalContribSvg.vue'
 
   export default {
     name: 'IndexPage',
@@ -569,6 +558,28 @@
       LinkedInSvg,
       GitHubSvg,
       StackOverflowSvg,
+      DrupalContribSvg,
+    },
+    mounted() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in');
+              // Stop observing the current target
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Adjust this value to control when the animation starts
+        }
+      );
+
+      // Add all the elements you want to animate to the observer
+      document.querySelectorAll('.animate-fade').forEach((element) => {
+        observer.observe(element);
+      });
     }
   }
 </script>
@@ -1130,6 +1141,22 @@
         }
       }
     }
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
   }
 
 </style>

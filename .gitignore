@@ -95,3 +95,6 @@ sw.*
 
 # PHP storm settings
 /.editorconfig
+
+# Vite compiled files
+.vite
