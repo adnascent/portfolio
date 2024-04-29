@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "nuxi clean && nuxt build --static",
     "dev": "nuxi dev",
-    "generate": "nuxi clean && nuxi generate",
+    "generate": "nuxi generate",
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
-    "deploy": "gh-pages --dotfiles -d .output/public"
+    "deploy": "cp CNAME .output/public && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "nuxt": "^3.11",

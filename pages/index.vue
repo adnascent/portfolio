@@ -476,16 +476,20 @@
           <h3>Connect with me</h3>
           <p>Reach out for further details or discussions.</p>
           <div class="connect__social">
-            <a href="https://www.linkedin.com/in/george-potter-487059187/">
+            <a href="https://www.linkedin.com/in/george-potter-487059187/"
+               target="_blank">
               <LinkedInSvg />
             </a>
-            <a href="https://www.facebook.com/georgejpotter">
+            <a href="https://www.facebook.com/georgejpotter"
+               target="_blank">
               <FacebookSvg />
             </a>
-            <a href="https://drupal.stackexchange.com/users/80942/george-potter">
+            <a href="https://drupal.stackexchange.com/users/80942/george-potter"
+              target="_blank">
               <StackOverflowSvg />
             </a>
-            <a href="https://www.drupal.org/u/gpotter">
+            <a href="https://www.drupal.org/u/gpotter"
+               target="_blank">
               <DrupalContribSvg />
             </a>
           </div>
