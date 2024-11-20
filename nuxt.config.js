@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       meta: [
         {charset: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        {hid: 'description', name: 'description', content: ''},
+        {hid: 'description', name: 'description', content: 'Experienced web developer with 12 years in the field, combining a background in computer graphics, business, and leadership. Explore my professional accomplishments and get in touch if you\'re looking for a skilled and creative collaborator.'},
         {name: 'format-detection', content: 'telephone=no'}
       ],
       script: [
@@ -48,6 +48,9 @@ export default defineNuxtConfig({
   css: [
     '@/assets/scss/global.scss',
   ],
+  nitro: {
+    compressPublicAssets: true,
+  },
   vite: {
     css: {
       preprocessorOptions: {

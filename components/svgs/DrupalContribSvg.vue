@@ -3,8 +3,8 @@
        xmlns:xlink="http://www.w3.org/1999/xlink"
        x="0px"
        y="0px"
-       viewBox="0 0 2160 2880"
-       style="enable-background:new 0 310 2240 2220;" xml:space="preserve">
+       viewBox="0 310 2240 2220"
+       xml:space="preserve">
     <g>
       <g>
         <path class="svg-fill" d="M1186,1080.5c-36-36-74.2-74.6-108.1-113.1c-31.7,36-65.2,68.8-98.7,102.3c-8.1,8-14.7,17.4-19.5,27.7

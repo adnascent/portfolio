@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   background: $background;
   font-family: $primary-font;
-  color: $primary-color;
+  color: $font-color;
   text-align: center;
   font-size: 1.1rem;
   line-height: 150%;
@@ -51,11 +51,11 @@ a {
   height: 0;
 }
 ::-webkit-scrollbar-thumb {
-  background: $secondary-color;
+  background: darken($secondary-color, 20%);
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: darken($secondary-color, 10%);
+  background: darken($secondary-color, 40%);
 }
 ::-webkit-scrollbar-thumb:active {
   background: $primary-color;

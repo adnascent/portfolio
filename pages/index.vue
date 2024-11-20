@@ -5,19 +5,19 @@
       <h1>
         George <span>Mahoney&#x2011;Potter</span>
       </h1>
-      <ul>
-        <li>Web developer</li>
-        <!--<li>Collaborator</li>
-        <li>Designer</li>
-        <li>Idea generator</li>
-        <li>Leader</li>-->
-      </ul>
+      <div>
+        Web developer
       </div>
-      <video src="/background.mp4"
-             autoplay
+      </div>
+      <video autoplay
              muted
              loop
-             class="intro__video" />
+             poster="/background.webp"
+             width="1280"
+             height="720"
+             class="intro__video">
+        <source src="/background.mp4" type="video/mp4">
+      </video>
       <!-- @formatter off -->
       <div class="intro__doodle">
       <css-doodle class="intro__doodle__inner">
@@ -35,7 +35,7 @@
 
           transform: rotate(calc(@i * 5deg));
           border-radius: 50%;
-          border: 5px solid hsla(calc(10 + 4 * @i), 70%, 68%, @r.8);
+          border: 5px solid hsla(calc(10 + 4 * @i), 7%, 86%, @r.8);
 
           transform-style: preserve-3d;
           will-change: transform, opacity;
@@ -67,8 +67,8 @@
     <section id="about">
       <h2>About</h2>
       <div class="about__inner">
-        <div class="about__image">
-          <img src="/george-mahoney-potter.jpg" alt="About me">
+        <div class="about__image radius-circles">
+          <img src="/george-mahoney-potter.webp" alt="About me" loading="lazy">
         </div>
         <div class="about__content">
           <h3>Hello there!</h3>
@@ -96,13 +96,13 @@
         <div class="experience__container animate-fade">
           <div class="experience__image">
             <div>
-            <img src="/ofs.jpg" alt="OFS Brands examples">
+              <img src="/ofs.jpg" alt="OFS Brands examples" loading="lazy">
             </div>
           </div>
           <div class="experience__content">
             <h3>OFS Brands</h3>
 
-            <h5>Employed from July 2016</h5>
+            <div class="experience__employment">Employed from July 2016</div>
             <p>Work includes: creating and managing multiple brand websites, an e-commerce store, internal website portals,
             and varies B2B toolsets, along with ideation planning, technology support, and reporting.</p>
 
@@ -123,12 +123,12 @@
         </div>
         <div class="experience__container animate-fade">
           <div class="experience__image">
-            <img src="/cli.jpg" alt="CLI Examples">
+            <img src="/cli.jpg" alt="CLI Examples" loading="lazy">
           </div>
           <div class="experience__content">
             <h3>CLI</h3>
 
-            <h5>Previously Employed January 2013 - July 2016</h5>
+            <div class="experience__employment">Previously Employed January 2013 - July 2016</div>
             <p>Work included: creating and managing multiple e-commerce stores and websites, web consulting, marketing emails, ad
             creation, programming support, software development, statistical reporting.</p>
 
@@ -147,12 +147,12 @@
         </div>
         <div class="experience__container animate-fade">
           <div class="experience__image">
-            <img src="/ridetech.jpg" alt="RideTech examples">
+            <img src="/ridetech.jpg" alt="RideTech examples" loading="lazy">
           </div>
           <div class="experience__content">
             <h3>RideTech</h3>
 
-            <h5>Previously Employed January 2010 - January 2013</h5>
+            <div class="experience__employment">Previously Employed January 2010 - January 2013</div>
             <p>Work involved: creating and editing an eCommerce store, designing email marketing campaigns, using social media,
             developing content management systems, and on occasion, laying out print media.</p>
 
@@ -213,6 +213,11 @@
             </div>
             <div class="skills__individual animate-fade">
               <div>
+                Next.js
+              </div>
+            </div>
+            <div class="skills__individual animate-fade">
+              <div>
                 Symphony
               </div>
             </div>
@@ -258,6 +263,11 @@
             <div class="skills__individual animate-fade">
               <div>
                 Mailchimp
+              </div>
+            </div>
+            <div class="skills__individual animate-fade">
+              <div>
+                Marketo
               </div>
             </div>
             <div class="skills__individual animate-fade">
@@ -309,22 +319,12 @@
           <div class="skills__set">
             <div class="skills__individual animate-fade">
               <div>
-                Code development
-              </div>
-            </div>
-            <div class="skills__individual animate-fade">
-              <div>
                 Containerization
               </div>
             </div>
             <div class="skills__individual animate-fade">
               <div>
-                Deployment pipelines
-              </div>
-            </div>
-            <div class="skills__individual animate-fade">
-              <div>
-                Code testing
+                Software testing
               </div>
             </div>
             <div class="skills__individual animate-fade">
@@ -361,8 +361,8 @@
     <section id="certification">
       <h2>Certifications</h2>
       <div class="certification__inner">
-        <div class="certification__image">
-          <img src="/aquia.png" alt="Aquia Drupal Developer Certification">
+        <div class="certification__image radius-circles">
+          <img src="/aquia.png" alt="Aquia Drupal Developer Certification" loading="lazy">
         </div>
         <div class="certification__content">
           <h3>Aquia Drupal Developer Certification</h3>
@@ -430,7 +430,7 @@
           <div class="testimonial__author">
             Mike M.
             <small>CLI</small>
-            <img src="/cli-testimonial.jpg" alt="Mike M.">
+            <img src="/cli-testimonial.jpg" alt="Mike M." loading="lazy">
           </div>
         </div>
       </div>
@@ -442,17 +442,23 @@
         <p class="hobbies__description">You've made it this far!  You must really care about me, here's a bonus, my top four hobbies:</p>
         <div class="hobbies__groups">
           <div class="hobbies__group">
-            <img src="/dogs-v2.jpg" alt="Animal lover">
+            <div class="hobbies__image radius-circles">
+              <img src="/dogs-v2.jpg" alt="Animal lover" loading="lazy">
+            </div>
             <h3>Animal lover</h3>
             <p>Two annoyingly friendly dogs, 1 hot tempered rabbit.</p>
           </div>
           <div class="hobbies__group">
-            <img src="/houseplants.jpg" alt="Houseplants addict">
+            <div class="hobbies__image radius-circles">
+              <img src="/houseplants.jpg" alt="Houseplants addict" loading="lazy">
+            </div>
             <h3>Houseplants addict</h3>
             <p>At 150 plants owned, down to 149 next week.</p>
           </div>
           <div class="hobbies__group">
-            <img src="/photography.jpg" alt="Photography hobbyist">
+            <div class="hobbies__image radius-circles">
+              <img src="/photography.jpg" alt="Photography hobbyist" loading="lazy">
+            </div>
             <h3>Photography hobbyist</h3>
             <p>Since my first 1 megapixel camera in 2008.
               <a href="https://adnascent.tumblr.com/"
@@ -460,7 +466,9 @@
             </p>
           </div>
           <div class="hobbies__group">
-            <img src="/music.jpg" alt="Music super fan">
+            <div class="hobbies__image radius-circles">
+              <img src="/music.jpg" alt="Music super fan" loading="lazy">
+            </div>
             <h3>Music super fan</h3>
             <p>Logged over 2,000 hours of listening on Spotify last year.</p>
           </div>
@@ -477,49 +485,51 @@
           <p>Reach out for further details or discussions.</p>
           <div class="connect__social">
             <a href="https://www.linkedin.com/in/george-potter-487059187/"
+               title="LinkedIn"
                target="_blank">
               <LinkedInSvg />
             </a>
             <a href="https://www.facebook.com/georgejpotter"
+               title="Facebook"
                target="_blank">
               <FacebookSvg />
             </a>
             <a href="https://drupal.stackexchange.com/users/80942/george-potter"
+               title="StackOverflow"
               target="_blank">
               <StackOverflowSvg />
             </a>
             <a href="https://www.drupal.org/u/gpotter"
+               title="Drupal"
                target="_blank">
               <DrupalContribSvg />
             </a>
           </div>
           <div>
             <strong>Location:</strong> Muncie, IN<br />
-            <strong>Phone:</strong> 812.631.5833<br />
             <strong>Email:</strong> georgpotter@gmail.com
           </div>
         </div>
         <div class="connect__form">
           <h3>Quick contact</h3>
-          <form>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="dba7d876-503c-4868-a923-b7957b287ff0">
             <div class="form__group">
-              <label>Name</label>
-              <input type="email" class="form-control" placeholder="Name">
+              <label for="name">Name *</label>
+              <input type="text" class="form-control" placeholder="Name" required name="name">
             </div>
             <div class="form__group">
-              <label>Email</label>
-              <input type="email" placeholder="Email">
+              <label for="email">Email *</label>
+              <input type="email" placeholder="Email" required name="email">
             </div>
             <div class="form__group">
-              <label>Company</label>
-              <input type="email" placeholder="Company">
+              <label>Message *</label>
+              <textarea placeholder="Message" name="message" required></textarea>
             </div>
+            <input type="checkbox" name="botcheck" style="display: none;">
             <div class="form__group">
-              <label>Message</label>
-              <textarea placeholder="Message"></textarea>
-            </div>
-            <div class="form__group">
-              <button type="submit" class="button">
+              <button type="submit"
+                      class="button">
                 Submit
               </button>
             </div>
@@ -593,7 +603,7 @@
 
   section {
     border-bottom: 1px solid #555;
-    min-height: calc(100vh - 3.2rem);
+    min-height: calc(100vh - $header-height);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -639,7 +649,7 @@
       height: 100%;
       z-index: 500;
       object-fit: cover;
-      mix-blend-mode: multiply;
+      opacity: 0.2;
     }
 
     .intro__meta {
@@ -662,15 +672,11 @@
     h1 {
       margin: 0;
       line-height: 100%;
+      margin-bottom: 2rem;
 
       @media (max-width: $screen-md) {
         font-size: 3rem;
       }
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
     }
 
     .intro__doodle {
@@ -803,6 +809,10 @@
           @media (max-width: $screen-sm) {
             flex: 100%;
           }
+
+          .experience__employment {
+            font-style: italic;
+          }
         }
 
       }
@@ -874,7 +884,7 @@
             justify-content: center;
             align-items: center;
             background: $secondary-color;
-            color: #fff;
+            color: #000;
             padding: 2rem;
             text-align: center;
             flex-wrap: wrap;
@@ -907,7 +917,7 @@
       .certification__image {
         max-width: 40%;
         border-radius: 1000px;
-        box-shadow: 0 0 1rem rgb(0, 0, 0, 0.2);
+        box-shadow: 0 0 2rem rgb(0, 0, 0, 0.6);
         padding-bottom: 40%;
         position: relative;
         background: $secondary-color;
@@ -1020,7 +1030,8 @@
     .testimonial {
       position: absolute;
       opacity: 0.0;
-      font-size: 1.4rem;
+      font-size: 2vw;
+      line-height: 120%;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
@@ -1142,6 +1153,10 @@
           @media (max-width: $screen-sm) {
             flex: 50%;
           }
+
+          .hobbies__image {
+            margin-bottom: 2rem;
+          }
         }
       }
     }
@@ -1161,6 +1176,37 @@
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
+  }
+
+  .radius-circles {
+    position: relative;
+
+    &:before {
+      background: $primary-color;
+      content: ' ';
+      position: absolute;
+      left: -0.5rem;
+      top: -0.5rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+
+    &:after {
+      background: $secondary-color;
+      content: ' ';
+      position: absolute;
+      right: -0.5rem;
+      bottom: -0.5rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+
+    * {
+      z-index: 2;
+      position: relative;
+    }
   }
 
 </style>

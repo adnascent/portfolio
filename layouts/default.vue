@@ -50,7 +50,7 @@
     <slot />
     <footer id="footer">
       <div class="footer__inner">
-        <img src="/george-mahoney-potter-remote.jpg" alt="Thank you for visiting!" title="Thank you for visiting!">
+        <img src="/george-mahoney-potter-remote.webp" alt="Thank you for visiting!" title="Thank you for visiting!" loading="lazy">
         <h2>Thank You for Visiting!</h2>
       </div>
     </footer>
@@ -291,7 +291,7 @@
   }
 
   footer#footer {
-    min-height: calc(100vh - 3.2rem);
+    min-height: calc(100vh - $header-height);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -305,9 +305,12 @@
     }
 
     img {
-      max-width: 600px;
+      max-width: 480px;
       width: 100%;
       border-radius: 100%;
+      border-right: 1rem solid $secondary-color;
+      border-bottom: 1rem solid $secondary-color;
+      margin-bottom: 1rem;
 
       @media (max-width: $screen-xl) {
         max-width: 500px;
@@ -323,11 +326,6 @@
         border-top-right-radius: 0;
         margin-bottom: 2rem;
       }
-    }
-
-    a.button {
-      color: $white;
-      border-color: $white;
     }
   }
 
