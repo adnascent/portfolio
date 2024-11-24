@@ -59,5 +59,6 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+  modules: ['nuxt-gtag'],
 })

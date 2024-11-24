@@ -302,6 +302,7 @@
 
     @media (max-width: $screen-sm) {
       padding-top: 0;
+      align-items: start;
     }
 
     img {

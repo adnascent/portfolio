@@ -10,8 +10,9 @@
     "deploy": "cp CNAME .output/public && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
+    "gh-pages": "^6.1",
     "nuxt": "^3.11",
-    "sass": "^1.72",
-    "gh-pages": "^6.1"
+    "nuxt-gtag": "^3.0.2",
+    "sass": "^1.72"
   }
 }

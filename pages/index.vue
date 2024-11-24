@@ -48,9 +48,10 @@
               opacity: 0;
             }
             10% {
-              opacity: 1;
+              opacity: 0.3;
             }
             95% {
+              opacity: 0;
               transform:
                 translate3d(0, 0, 45vmin)
                 rotateX(calc(@p(-1, 1) * @r(30deg, 330deg)))
@@ -362,7 +363,7 @@
       <h2>Certifications</h2>
       <div class="certification__inner">
         <div class="certification__image radius-circles">
-          <img src="/aquia.png" alt="Aquia Drupal Developer Certification" loading="lazy">
+          <AquiaSvg />
         </div>
         <div class="certification__content">
           <h3>Aquia Drupal Developer Certification</h3>
@@ -428,9 +429,11 @@
         <div class="testimonial testimonial--active">
           <p>"People at CLI are still saying, 'I wish George were still here, he would know how to do this'"</p>
           <div class="testimonial__author">
-            Mike M.
-            <small>CLI</small>
             <img src="/cli-testimonial.jpg" alt="Mike M." loading="lazy">
+            <div>
+              Mike M.
+              <small>CLI</small>
+          </div>
           </div>
         </div>
       </div>
@@ -556,6 +559,7 @@
   import GitHubSvg from '~/components/svgs/GitHubSvg.vue'
   import StackOverflowSvg from '~/components/svgs/StackOverflowSvg.vue'
   import DrupalContribSvg from '~/components/svgs/DrupalContribSvg.vue'
+  import AquiaSvg from '~/components/svgs/AquiaSvg.vue'
 
   export default {
     name: 'IndexPage',
@@ -573,6 +577,7 @@
       GitHubSvg,
       StackOverflowSvg,
       DrupalContribSvg,
+      AquiaSvg,
     },
     mounted() {
       const observer = new IntersectionObserver(
@@ -608,14 +613,14 @@
     justify-content: center;
     display: flex;
     position: relative;
-    padding-top: 2rem;
+    padding: 5% 0;
     background: $background linear-gradient(335deg, $background-dark 0%, $background 500px, $background 100%);
 
     h2 {
       position: absolute;
       left: 2rem;
       top: 0;
-      z-index: 1;
+      z-index: 10;
       font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 0.05rem;
@@ -743,7 +748,7 @@
   section#experience {
 
     .experience__inner {
-      padding: 2rem 0 2rem 2rem;
+      padding: 2.5% 5%;
 
       @media (max-width: $screen-sm) {
         padding: 2rem;
@@ -752,10 +757,7 @@
       .experience__container {
         display: flex;
         margin-bottom: 2rem;
-        border: 2px solid $secondary-color;
-        border-right: 0;
-        border-top-left-radius: 1000px;
-        border-bottom-left-radius: 1000px;
+        border: 1px solid $primary-color;
         overflow: hidden;
         background: $background;
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -808,6 +810,10 @@
 
           @media (max-width: $screen-sm) {
             flex: 100%;
+          }
+
+          h3 {
+            font-size: 2rem;
           }
 
           .experience__employment {
@@ -918,28 +924,26 @@
         max-width: 40%;
         border-radius: 1000px;
         box-shadow: 0 0 2rem rgb(0, 0, 0, 0.6);
-        padding-bottom: 40%;
         position: relative;
         background: $secondary-color;
         width: 800px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @media (max-width: $screen-md) {
           max-width: 50%;
         }
 
         @media (max-width: $screen-sm) {
-          max-width: 100%;
-          width: 100%;
-          padding-bottom: 100%;
+          max-width: 80%;
+          width: 80%;
         }
 
-        img {
-          object-fit: contain;
-          position: absolute;
-          left: 20%;
-          top: 20%;
-          width: 60%;
-          height: 60%;
+        :deep(svg) {
+          width: 70%;
+          height: auto;
         }
       }
 
@@ -973,7 +977,7 @@
       .education__content {
         border: 1px solid $primary-color;
         padding: 3rem;
-        margin: 1rem;
+        margin: 2.5% 5%;
         background: $background;
         flex: 50%;
 
@@ -1005,7 +1009,7 @@
       .organizations__content {
         border: 1px solid $primary-color;
         padding: 3rem;
-        margin: 1rem;
+        margin: 2.5% 5%;
         background: $background;
         flex: 50%;
 
@@ -1030,11 +1034,15 @@
     .testimonial {
       position: absolute;
       opacity: 0.0;
-      font-size: 2vw;
-      line-height: 120%;
+      font-size: 2.4rem;
+      line-height: 140%;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      @media (max-width: $screen-sm) {
+        font-size: 1.8rem;
+      }
 
       &.testimonial--active {
         opacity: 1;
@@ -1042,18 +1050,27 @@
 
       .testimonial__author {
         font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        line-height: 100%;
+        margin: 0 auto;
+        justify-content: center;
 
         small {
           display: block;
-          margin: 1rem 0;
           font-size: 0.8rem;
+          line-height: 0.8rem;
           letter-spacing: 0.1rem;
           text-transform: uppercase;
         }
 
+        div {
+          text-align: left;
+        }
+
         img {
-          margin: 0 auto;
           width: 64px;
+          margin-right: 1rem;
         }
       }
     }
