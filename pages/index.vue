@@ -67,7 +67,7 @@
           <div class="experience__content">
             <h3>OFS Brands</h3>
 
-            <div class="experience__employment">Employed from July 2016</div>
+            <div class="experience__employment">Employed from July 2017</div>
             <p>Work includes: creating and managing multiple brand websites, an e-commerce store, internal website
               portals,
               and varies B2B toolsets, along with ideation planning, technology support, and reporting.</p>
@@ -98,7 +98,7 @@
           <div class="experience__content">
             <h3>CLI</h3>
 
-            <div class="experience__employment">Previously Employed January 2013 - July 2016</div>
+            <div class="experience__employment">Previously Employed January 2013 - July 2017</div>
             <p>Work included: creating and managing multiple e-commerce stores and websites, web consulting, marketing
               emails, ad
               creation, programming support, software development, statistical reporting.</p>
